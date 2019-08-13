@@ -14,6 +14,12 @@ namespace WindowsFolders123
             Console.WriteLine("--Creando Directorios--");
             AdministracionCarpetas.CrearDirectorioRaiz("C");
 
+            AdministracionCarpetas.CrearSubdirectorio("Carpeta", "C");
+            AdministracionCarpetas.CrearSubdirectorio("Subcarpeta", "Carpeta");
+            AdministracionCarpetas.CrearArchivo("Archivo Prueba 1.txt", "Carpeta");
+            AdministracionCarpetas.CrearArchivo("Archivo Prueba 2.txt", "Subcarpeta");
+            AdministracionCarpetas.CrearArchivo("Archivo Prueba 3.txt", "Subcarpeta");
+
             AdministracionCarpetas.CrearSubdirectorio("Windows", "C");
             AdministracionCarpetas.CrearSubdirectorio("Program Files", "C");
             AdministracionCarpetas.CrearSubdirectorio("Users", "C");

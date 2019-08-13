@@ -1,7 +1,9 @@
 ﻿CREATE PROCEDURE [dbo].[ObtenerProductosMesActual]	
 AS
 BEGIN
-	SELECT DISTINCT TP.Id, TP.Nombre, P.Id, P.Nombre
+	SELECT DISTINCT 			
+			TP.Nombre [Tipo Producto],
+			P.Nombre [Producto]
 	FROM Inventario I
 	INNER JOIN Producto P
 		ON I.IdProducto = P.Id
